@@ -1,17 +1,14 @@
-class ReverseNumber {
-    int num;
-    void reverse(){
-        int rev = 0;
-        int temp = num;
-        while(temp!=0){
-            rev = rev * 10 + temp % 10;
-            temp /=10;
-        }
-        System.out.println("Reversed Number = " + rev);
-    }
+import java.util.Scanner;
+class Reverse{
     public static void main(String[] args) {
-        ReverseNumber obj = new ReverseNumber();
-        obj.num = 98765;
-        obj.reverse();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a string: ");
+        String str = sc.nextLine();
+        String[] words = str.split(" ");
+        for(int i = words.length - 1; i>=0; i--)
+        {
+            System.out.print(words[i] + " ");
+        }
+        sc.close();
     }
 }
