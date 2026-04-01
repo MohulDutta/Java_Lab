@@ -17,7 +17,7 @@ public class StringState{
                 spaces++;
             
         }
-        System.out.println("uppercade letters: "+upper);
+        System.out.println("uppercase letters: "+upper);
         System.out.println("lowercase letters: "+lower);
         System.out.println("digits: "+digits);
         System.out.println("spaces: "+spaces);
